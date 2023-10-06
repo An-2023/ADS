@@ -24,7 +24,15 @@ DOMAIN-SUFFIX,ads5-normal-lf.zijieapi.com,REJECT
 DOMAIN-SUFFIX,p3-ad-sign.byteimg.com,REJECT
 DOMAIN-SUFFIX,p6-ad-sign.byteimg.com,REJECT
 DOMAIN-SUFFIX,p9-ad-sign.byteimg.com,REJECT
+DOMAIN-SUFFIX,p3-be-pack-sign.pglstatp-toutiao.com,REJECT
+DOMAIN-SUFFIX,p6-be-pack-sign.pglstatp-toutiao.com,REJECT
+DOMAIN-SUFFIX,p9-be-pack-sign.pglstatp-toutiao.com,REJECT
 DOMAIN-SUFFIX,p26-be-pack-sign.pglstatp-toutiao.com,REJECT
+DOMAIN-SUFFIX,sf3-fe-tos.pglstatp-toutiao.com,REJECT
+DOMAIN-SUFFIX,v3-be-pack.pglstatp-toutiao.com,REJECT
+DOMAIN-SUFFIX,v9-be-pack.pglstatp-toutiao.com,REJECT
+DOMAIN-SUFFIX,v6-be-pack-nxyd.pglstatp-toutiao.com,REJECT
+// URL-REGEX,http:,REJECT
 
 # ➤ 综合 Safari & App 内容管理区域
 
@@ -71,3 +79,11 @@ FINAL,DIRECT
 [URL Rewrite]
 ^https?://(www.)?g.cn https://www.google.com 302
 ^https?://(www.)?google.cn https://www.google.com 302
+
+// 穿山甲广告链接 - 源于【七猫小说】
+^https?:\/\/api-access.pangolin-sdk-toutiao.com\/api\/ad\/union\/ _ REJECT
+^https?:\/\/api-access.pangolin-sdk-toutiao1.com\/api\/ad\/union\/ _ REJECT
+^https?:\/\/api-access.pangolin-sdk-toutiao-b.com\/api\/ad\/union\/ _ REJECT
+
+// 快手广告链接 - 源于【七猫小说】
+^https?:\/\/p1-lm.adukwai.com\/bs2\/adUnionVideo\/ _ REJECT
