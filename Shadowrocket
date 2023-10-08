@@ -81,9 +81,18 @@ FINAL,DIRECT
 ^https?://(www.)?google.cn https://www.google.com 302
 
 // 穿山甲广告链接 - 源于【七猫小说】
-^https?:\/\/api-access.pangolin-sdk-toutiao.com\/api\/ad\/union\/ _ REJECT
-^https?:\/\/api-access.pangolin-sdk-toutiao1.com\/api\/ad\/union\/ _ REJECT
-^https?:\/\/api-access.pangolin-sdk-toutiao-b.com\/api\/ad\/union\/ _ REJECT
+^https?:\/\/api-access.pangolin-sdk-toutiao.com\/api\/ad\/union\/sdk\/get_ads\/ _ REJECT
+^https?:\/\/api-access.pangolin-sdk-toutiao1.com\/api\/ad\/union\/sdk\/stats\/batch\/ _ REJECT
+^https?:\/\/api-access.pangolin-sdk-toutiao-b.com\/api\/ad\/union\/sdk\/get_ads\/ _ REJECT
 
 // 快手广告链接 - 源于【七猫小说】
 ^https?:\/\/p1-lm.adukwai.com\/bs2\/adUnionVideo\/ _ REJECT
+^https?:\/\/p1-lm.adukwai.com\/upic\/ _ REJECT
+
+// 七猫小说广告发起链 - 源于【七猫小说】
+^https?:\/\/api-cfg.wtzw.com\/v1\/reward\/h5\?ad_unit_id _ REJECT
+
+[mitm]
+ca-passphrase = Shadowrocket
+hostname = api-access.pangolin-sdk-toutiao.com,api-access.pangolin-sdk-toutiao1.com,api-access.pangolin-sdk-toutiao-b.com,p1-lm.adukwai.com,api-cfg.wtzw.com
+enable = true
