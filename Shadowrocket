@@ -11,7 +11,6 @@ DOMAIN-SUFFIX,pv.ip1398.com,REJECT
 # ➤ Baidu
 DOMAIN-SUFFIX,hm.baidu.com,REJECT
 DOMAIN-SUFFIX,mobads.baidu.com,REJECT
-DOMAIN-SUFFIX,pos.baidu.com,REJECT
 
 # ➤ Tencent
 DOMAIN-SUFFIX,e.qq.com,REJECT
@@ -21,43 +20,25 @@ DOMAIN-SUFFIX,trace.qq.com,REJECT
 # ➤ ByteDance - 穿山甲
 DOMAIN-SUFFIX,ads3-normal-lf.zijieapi.com,REJECT
 DOMAIN-SUFFIX,ads5-normal-lf.zijieapi.com,REJECT
-DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao.com,REJECT
-DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao1.com,REJECT
-DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiaob.com,REJECT
 DOMAIN-SUFFIX,p3-ad-sign.byteimg.com,REJECT
 DOMAIN-SUFFIX,p6-ad-sign.byteimg.com,REJECT
 DOMAIN-SUFFIX,p9-ad-sign.byteimg.com,REJECT
 DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
 
-// 鉴于 pglstatp-toutiao 种类过多，暂时未发现有正经用途
-// DOMAIN-SUFFIX,p3-be-pack-sign.pglstatp-toutiao.com,REJECT
-// DOMAIN-SUFFIX,p6-be-pack-sign.pglstatp-toutiao.com,REJECT
-// DOMAIN-SUFFIX,p9-be-pack-sign.pglstatp-toutiao.com,REJECT
-// DOMAIN-SUFFIX,p26-be-pack-sign.pglstatp-toutiao.com,REJECT
-// DOMAIN-SUFFIX,sf3-fe-tos.pglstatp-toutiao.com,REJECT
-// DOMAIN-SUFFIX,v3-be-pack.pglstatp-toutiao.com,REJECT
-// DOMAIN-SUFFIX,v9-be-pack.pglstatp-toutiao.com,REJECT
-// DOMAIN-SUFFIX,v6-be-pack-nxyd.pglstatp-toutiao.com,REJECT
-// URL-REGEX,http:,REJECT
 
 # ➤ 综合 Safari & App 内容管理区域
-
-// App ～ 【 七猫小说 】
-// 禁止后影响拉取小说内容
-DOMAIN-SUFFIX,api-ks.wtzw.com,DIRECT
 
 // Safari 浏览器 开发者工具 > 审查元素 > JavaScript 脚本
 DOMAIN-SUFFIX,dpj0uvy.icu,REJECT
 
-DOMAIN-SUFFIX,api-cfg.wtzw.com,REJECT
-DOMAIN-SUFFIX,ljte0.com,REJECT
+// 中国联通一键登录 Host
 DOMAIN-SUFFIX,nisjs1.10010.com,REJECT
-DOMAIN-SUFFIX,p1-lm.adukwai.com,REJECT
-DOMAIN-SUFFIX,pv.sohu.com,REJECT
-DOMAIN-SUFFIX,sugar.zhihu.com,REJECT
-DOMAIN-SUFFIX,zhihu-web-analytics.zhihu.com,REJECT
 
-# Google
+
+
+# ➤ 海外 Safari & App 突破封锁域名
+
+# ➤ Google
 DOMAIN-SUFFIX,google.com,PROXY
 DOMAIN-SUFFIX,google.com.hk,PROXY
 DOMAIN-SUFFIX,googleapis.com,PROXY
@@ -68,19 +49,19 @@ DOMAIN-SUFFIX,youtu.be,PROXY
 DOMAIN-SUFFIX,youtube.com,PROXY
 DOMAIN-SUFFIX,ytimg.com,PROXY
 
-# Twitter
+# ➤ Twitter
 DOMAIN-SUFFIX,t.co,PROXY
 DOMAIN-SUFFIX,twimg.com,PROXY
 DOMAIN-SUFFIX,twitter.com,PROXY
 
-# Telegram
+# ➤ Telegram
 DOMAIN-SUFFIX,t.me,PROXY
 DOMAIN-SUFFIX,telegra.ph,PROXY
 DOMAIN-SUFFIX,telegram.org,PROXY
 IP-CIDR,91.108.56.0/22,PROXY,no-resolve
 IP-CIDR,149.154.160.0/20,PROXY,no-resolve
 
-# Top blocked sites
+# ➤ 其他综合域名
 DOMAIN-SUFFIX,github.com,PROXY
 DOMAIN-SUFFIX,githubusercontent.com,PROXY
 
@@ -92,14 +73,6 @@ FINAL,DIRECT
 ^https?://(www.)?g.cn https://www.google.com 302
 ^https?://(www.)?google.cn https://www.google.com 302
 
-// 穿山甲广告链接 - 源于【七猫小说】
-// ^https?:\/\/api-access.pangolin-sdk-toutiao.com\/api\/ad\/union\/sdk\/get_ads\/ _ REJECT
-// ^https?:\/\/api-access.pangolin-sdk-toutiao1.com\/api\/ad\/union\/sdk\/stats\/batch\/ _ REJECT
-// ^https?:\/\/api-access.pangolin-sdk-toutiao-b.com\/api\/ad\/union\/sdk\/get_ads\/ _ REJECT
-
-// 快手广告链接 - 源于【七猫小说】
-// ^https?:\/\/p1-lm.adukwai.com\/bs2\/adUnionVideo\/ _ REJECT
-// ^https?:\/\/p1-lm.adukwai.com\/upic\/ _ REJECT
-
-// 七猫小说广告发起链 - 源于【七猫小说】
-// ^https?:\/\/api-cfg.wtzw.com\/v1\/reward\/h5\?ad_unit_id _ REJECT
+// 穿山甲广告链接 - 源于【 开发文档 】
+^https?:\/\/api-access.pangolin-sdk-toutiao.com\/api\/ad\/union\/sdk\/get_ads\/ _ REJECT
+^https?:\/\/api-access.pangolin-sdk-toutiao-b.com\/api\/ad\/union\/sdk\/get_ads\/ _ REJECT
