@@ -9,15 +9,18 @@ dns-server = system
 
 DOMAIN-SUFFIX,ads3-normal-lf.zijieapi.com,REJECT
 DOMAIN-SUFFIX,ads5-normal-lf.zijieapi.com,REJECT
+DOMAIN-SUFFIX,cpro.baidu.com,REJECT
 DOMAIN-SUFFIX,e.qq.com,REJECT
 DOMAIN-SUFFIX,gdt.qq.com,REJECT
 DOMAIN-SUFFIX,hm.baidu.com,REJECT
 DOMAIN-SUFFIX,log-api.pangolin-sdk-toutiao.com,REJECT
 DOMAIN-SUFFIX,mobads.baidu.com,REJECT
 DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
+DOMAIN-SUFFIX,pos.baidu.com,REJECT
 DOMAIN-SUFFIX,trace.qq.com,REJECT
 DOMAIN-SUFFIX,ulogs.umeng.com,REJECT
 DOMAIN-SUFFIX,ulogs.umengcloud.com,REJECT
+DOMAIN-SUFFIX,yt-adp.ws.126.net,REJECT
 
 # ➤ 综合 Safari & App 内容管理区域
 
@@ -76,22 +79,24 @@ FINAL,DIRECT
 ^https?:\/\/api-access.pangolin-sdk-toutiao.com\/api\/ad\/union\/sdk\/get_ads\/ _ REJECT
 ^https?:\/\/api-access.pangolin-sdk-toutiao-b.com\/api\/ad\/union\/sdk\/get_ads\/ _ REJECT
 
+// 爱奇艺广告链接 - 源于【 抓包工具 】
+^http:\/\/pic3.iqiyipic.com\/image\/20230526\/92\/a4\/pv_10025527357_em_601.jpg _ REJECT
+
 // 穿山甲广告链接 - 源于【 抓包工具 】
 ^https?:\/\/ether-pack.pangolin-sdk-toutiao.com\/union\/endcard\/ _ REJECT
 
 // 腾讯广告链接 - 源于【 抓包工具 】
 ^https?:\/\/kg.qq.com\/gtimg\/music\/common\/upload\/image\/I8JFTP3I15AJWG4KLMOUHY.jpg _ REJECT
 
+// 网易广告链接 - 源于【 抓包工具 】
+^https?:\/\/pg-ad-b1.ws.126.net\/yixiao\/32453\/*.jpg _ REJECT
+
 [MITM]
 ca-passphrase = Shadowrocket
-hostname = api-access.pangolin-sdk-toutiao.com,api-access.pangolin-sdk-toutiao-b.com,ether-pack.pangolin-sdk-toutiao.com,kg.qq.com
+hostname = pangolin-sdk-toutiao.com,pangolin-sdk-toutiao-b.com,kg.qq.com,126.net
 enable = true
 ca-p12 = 
 
 
 
 // 广告链接存放区 - 暂未进行设限
-// https://ether-pack.pangolin-sdk-toutiao.com/union/endcard/ > https://sf1-be-tos.pglstatp-toutiao.com/obj/ttfe/adfe/union_endcard/logo/logo.png
-/// https://p3-be-pack-sign.pglstatp-toutiao.com/web.business.image/202303305d0da92e7d060a7246158693~tplv-qgppglrh0x-noop.image
-/// https://p9-be-pack-sign.pglstatp-toutiao.com/web.business.image/202303305d0da92e7d060a7246158693~tplv-qgppglrh0x-noop.image
-/// https://sf3-fe-tos.pglstatp-toutiao.com/obj/ad-pattern/endcard/renderer/ba3020/index.4f887575.js
