@@ -156,6 +156,7 @@ DOMAIN-SUFFIX,iqiyi.com,DIRECT
 --------------------------------------------------
 # App / Safari
 DOMAIN-SUFFIX,bing.com,DIRECT
+DOMAIN-SUFFIX,csdn.net,DIRECT
 DOMAIN-SUFFIX,github.com,DIRECT
 DOMAIN-SUFFIX,icloud.com,DIRECT
 DOMAIN-SUFFIX,sojson.com,DIRECT
