@@ -192,6 +192,8 @@ DOMAIN-SUFFIX,iqiyi.com,DIRECT
 --------------------------------------------------
 #                                            Other
 --------------------------------------------------
+# Safari
+DOMAIN-SUFFIX,sojson.com,DIRECT
 
 [URL Rewrite]
 ^https?://(www.)?g.cn https://www.google.com 302
