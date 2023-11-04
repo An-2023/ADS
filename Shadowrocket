@@ -38,7 +38,6 @@ DOMAIN-SUFFIX,12377.cn,DIRECT
 DOMAIN-SUFFIX,163.com,DIRECT
 DOMAIN-SUFFIX,58.com,DIRECT
 DOMAIN-SUFFIX,aligames.com,DIRECT
-DOMAIN-SUFFIX,amap.com,DIRECT
 DOMAIN-SUFFIX,bilibili.com,DIRECT
 DOMAIN-SUFFIX,bilivideo.com,DIRECT
 DOMAIN-SUFFIX,chacuo.net,DIRECT
@@ -163,6 +162,9 @@ DOMAIN-SUFFIX,alipay.com,DIRECT
 
 # Taobao
 DOMAIN-SUFFIX,taobao.com,DIRECT
+
+# Other
+DOMAIN-SUFFIX,amap.com,DIRECT
 
 --------------------------------------------------
 #                                        ByteDance
