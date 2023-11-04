@@ -152,6 +152,7 @@ DOMAIN-SUFFIX,twitter.com,PROXY
 # WeChat
 DOMAIN-SUFFIX,qq.com,DIRECT
 DOMAIN-SUFFIX,wechat.com,DIRECT
+IP-CIDR,119.167.144.13/32,DIRECT,no-resolve
 IP-CIDR,119.167.144.44/32,DIRECT,no-resolve
 
 --------------------------------------------------
