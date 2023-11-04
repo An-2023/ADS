@@ -127,6 +127,7 @@ DOMAIN-SUFFIX,iqiyi.com,DIRECT
 --------------------------------------------------
 # App / Safari
 DOMAIN-SUFFIX,github.com,DIRECT
+DOMAIN-SUFFIX,icloud.com,DIRECT
 DOMAIN-SUFFIX,sojson.com,DIRECT
 DOMAIN-SUFFIX,usetoolbar.com,DIRECT
 
