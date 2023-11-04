@@ -171,6 +171,11 @@ DOMAIN-SUFFIX,amemv.com,DIRECT
 DOMAIN-SUFFIX,douyin.com,DIRECT
 DOMAIN-SUFFIX,douyincdn.com,DIRECT
 IP-CIDR,36.250.224.91/32,DIRECT,no-resolve
+IP-CIDR,157.122.99.164/32,DIRECT,no-resolve
+IP-CIDR,157.122.99.165/32,DIRECT,no-resolve
+IP-CIDR,157.122.99.166/32,DIRECT,no-resolve
+IP-CIDR,157.122.99.167/32,DIRECT,no-resolve
+IP-CIDR,157.122.99.168/32,DIRECT,no-resolve
 
 --------------------------------------------------
 #                     Baidu
