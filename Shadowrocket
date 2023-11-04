@@ -81,7 +81,6 @@ DOMAIN-SUFFIX,wtzw.com,DIRECT
 DOMAIN-SUFFIX,xiaohongshu.com,DIRECT
 DOMAIN-SUFFIX,xxsy.net,DIRECT
 DOMAIN-SUFFIX,youdao.com,DIRECT
-DOMAIN-SUFFIX,youku.com,DIRECT
 DOMAIN-SUFFIX,zhengqi100.com,DIRECT
 DOMAIN-SUFFIX,zhihu.com,DIRECT
 DOMAIN-SUFFIX,zhipin.com,DIRECT
@@ -163,6 +162,7 @@ DOMAIN-SUFFIX,aligames.com,DIRECT
 DOMAIN-SUFFIX,alipay.com,DIRECT
 DOMAIN-SUFFIX,amap.com,DIRECT
 DOMAIN-SUFFIX,dingtalk.com,DIRECT
+DOMAIN-SUFFIX,youku.com,DIRECT
 
 --------------------------------------------------
 #                                        ByteDance
