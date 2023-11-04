@@ -73,7 +73,6 @@ DOMAIN-SUFFIX,sohu.com,DIRECT
 DOMAIN-SUFFIX,soulapp.cn,DIRECT
 DOMAIN-SUFFIX,tianyancha.com,DIRECT
 DOMAIN-SUFFIX,tencent.com,DIRECT
-DOMAIN-SUFFIX,tudou.com,DIRECT
 DOMAIN-SUFFIX,wandoujia.com,DIRECT
 DOMAIN-SUFFIX,weibo.com,DIRECT
 DOMAIN-SUFFIX,wps.cn,DIRECT
@@ -162,6 +161,7 @@ DOMAIN-SUFFIX,aligames.com,DIRECT
 DOMAIN-SUFFIX,alipay.com,DIRECT
 DOMAIN-SUFFIX,amap.com,DIRECT
 DOMAIN-SUFFIX,dingtalk.com,DIRECT
+DOMAIN-SUFFIX,tudou.com,DIRECT
 DOMAIN-SUFFIX,youku.com,DIRECT
 
 --------------------------------------------------
