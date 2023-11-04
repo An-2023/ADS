@@ -170,6 +170,7 @@ DOMAIN-SUFFIX,taobao.com,DIRECT
 # Douyin
 DOMAIN-SUFFIX,douyin.com,DIRECT
 DOMAIN-SUFFIX,douyincdn.com,DIRECT
+IP-CIDR,36.250.224.91/32,DIRECT,no-resolve
 
 --------------------------------------------------
 #                     Baidu
