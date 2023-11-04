@@ -1,102 +1,137 @@
 [General]
+include = iPhone_AdGuard.conf
 ipv6 = true
-dns-server = system
+dns-server = 124.222.57.60:3333
 
 
 [Rule]
+--------------------------------------------------
+# Accelerate most visited sites
 
-# ➤ 基于 AdGuard Home DNS 综合管理区域
-
+      ----优化部分站点内容 > 基于 AdGuard Home DNS
+      
 DOMAIN-SUFFIX,ads3-normal-lf.zijieapi.com,REJECT
 DOMAIN-SUFFIX,ads5-normal-lf.zijieapi.com,REJECT
-DOMAIN-SUFFIX,cpro.baidu.com,REJECT
-DOMAIN-SUFFIX,e.qq.com,REJECT
-DOMAIN-SUFFIX,gdt.qq.com,REJECT
-DOMAIN-SUFFIX,hm.baidu.com,REJECT
-DOMAIN-SUFFIX,log-api.pangolin-sdk-toutiao.com,REJECT
-DOMAIN-SUFFIX,mobads.baidu.com,REJECT
+DOMAIN-SUFFIX,feed-image.baidu.com,REJECT
+DOMAIN-SUFFIX,fms.ipinyou.com,REJECT
+DOMAIN-SUFFIX,p1-lm.adukwai.com,REJECT
+DOMAIN-SUFFIX,pgdt.gtimg.cn,REJECT
+DOMAIN-SUFFIX,pgdt.ugdtimg.com,REJECT
 DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
-DOMAIN-SUFFIX,pos.baidu.com,REJECT
-DOMAIN-SUFFIX,trace.qq.com,REJECT
-DOMAIN-SUFFIX,ulogs.umeng.com,REJECT
-DOMAIN-SUFFIX,ulogs.umengcloud.com,REJECT
-DOMAIN-SUFFIX,yt-adp.ws.126.net,REJECT
+--------------------------------------------------
 
-# ➤ 综合 Safari & App 内容管理区域
+--------------------------------------------------
+# Accelerate the blocked sites
 
-// 本机 IP 收集
-DOMAIN-SUFFIX,pv.ip1398.com,REJECT
-
-// Safari 浏览器 开发者工具 > 审查元素 > JavaScript 脚本
-DOMAIN-SUFFIX,dpj0uvy.icu,REJECT
-
-// 中国联通一键登录 Host
-DOMAIN-SUFFIX,nisjs1.10010.com,REJECT
-
-// 其他未分类
-DOMAIN-SUFFIX,p3-ad-sign.byteimg.com,REJECT
-DOMAIN-SUFFIX,p6-ad-sign.byteimg.com,REJECT
-DOMAIN-SUFFIX,p9-ad-sign.byteimg.com,REJECT
-
-# ➤ 海外 Safari & App 突破封锁域名
-
-# ➤ Google
+DOMAIN-SUFFIX,github.com,PROXY
+DOMAIN-SUFFIX,githubusercontent.com,PROXY
 DOMAIN-SUFFIX,google.com,PROXY
-DOMAIN-SUFFIX,google.com.hk,PROXY
 DOMAIN-SUFFIX,googleapis.com,PROXY
 DOMAIN-SUFFIX,googlevideo.com,PROXY
-DOMAIN-SUFFIX,googleusercontent.com,PROXY
-DOMAIN-SUFFIX,ggpht.com,PROXY
-DOMAIN-SUFFIX,youtu.be,PROXY
-DOMAIN-SUFFIX,youtube.com,PROXY
-DOMAIN-SUFFIX,ytimg.com,PROXY
-
-# ➤ Twitter
+DOMAIN-SUFFIX,huggingface.co,PROXY
 DOMAIN-SUFFIX,t.co,PROXY
-DOMAIN-SUFFIX,twimg.com,PROXY
-DOMAIN-SUFFIX,twitter.com,PROXY
-
-# ➤ Telegram
 DOMAIN-SUFFIX,t.me,PROXY
 DOMAIN-SUFFIX,telegra.ph,PROXY
 DOMAIN-SUFFIX,telegram.org,PROXY
+DOMAIN-SUFFIX,twimg.com,PROXY
+DOMAIN-SUFFIX,twitter.com,PROXY
 IP-CIDR,91.108.56.0/22,PROXY,no-resolve
 IP-CIDR,149.154.160.0/20,PROXY,no-resolve
+IP-CIDR,2001:67C:4E8:://48,PROXY,no-resolve
+IP-CIDR,2001:B28:F23D:://48,PROXY,no-resolve
+IP-CIDR,2001:B28:F23F:://48,PROXY,no-resolve
+--------------------------------------------------
 
-# ➤ 其他综合域名
-DOMAIN-SUFFIX,github.com,PROXY
-DOMAIN-SUFFIX,githubusercontent.com,PROXY
+--------------------------------------------------
+# Sites that are not blocked by the Great Firewall
 
-# Final
-FINAL,DIRECT
-
+DOMAIN-SUFFIX,10086.cn,DIRECT
+DOMAIN-SUFFIX,122.gov.cn,DIRECT
+DOMAIN-SUFFIX,12306.cn,DIRECT
+DOMAIN-SUFFIX,12377.cn,DIRECT
+DOMAIN-SUFFIX,163.com,DIRECT
+DOMAIN-SUFFIX,58.com,DIRECT
+DOMAIN-SUFFIX,aligames.com,DIRECT
+DOMAIN-SUFFIX,alipay.com,DIRECT
+DOMAIN-SUFFIX,amap.com,DIRECT
+DOMAIN-SUFFIX,amemv.com,DIRECT
+DOMAIN-SUFFIX,baidu.com,DIRECT
+DOMAIN-SUFFIX,bilibili.com,DIRECT
+DOMAIN-SUFFIX,bilivideo.com,DIRECT
+DOMAIN-SUFFIX,chacuo.net,DIRECT
+DOMAIN-SUFFIX,cijian.link,DIRECT
+DOMAIN-SUFFIX,cmread.com,DIRECT
+DOMAIN-SUFFIX,dingtalk.com,DIRECT
+DOMAIN-SUFFIX,douban.com,DIRECT
+DOMAIN-SUFFIX,douyin.com,DIRECT
+DOMAIN-SUFFIX,douyincdn.com,DIRECT
+DOMAIN-SUFFIX,ejoy.com,DIRECT
+DOMAIN-SUFFIX,flysdk.cn,DIRECT
+DOMAIN-SUFFIX,fqnovel.com,DIRECT
+DOMAIN-SUFFIX,gcloudgbs.com,DIRECT
+DOMAIN-SUFFIX,happyelements.cn,DIRECT
+DOMAIN-SUFFIX,hdslb.com,DIRECT
+DOMAIN-SUFFIX,huawei.com,DIRECT
+DOMAIN-SUFFIX,hzyoka.com,DIRECT
+DOMAIN-SUFFIX,iciba.com,DIRECT
+DOMAIN-SUFFIX,iqiyi.com,DIRECT
+DOMAIN-SUFFIX,izuiyou.com,DIRECT
+DOMAIN-SUFFIX,jd.com,DIRECT
+DOMAIN-SUFFIX,kuaishou.com,DIRECT
+DOMAIN-SUFFIX,kugou.com,DIRECT
+DOMAIN-SUFFIX,lingxigames.com,DIRECT
+DOMAIN-SUFFIX,meituan.com,DIRECT
+DOMAIN-SUFFIX,mi.com,DIRECT
+DOMAIN-SUFFIX,migu.cn,DIRECT
+DOMAIN-SUFFIX,miguvideo.com,DIRECT
+DOMAIN-SUFFIX,mihoyo.com,DIRECT
+DOMAIN-SUFFIX,moji.com,DIRECT
+DOMAIN-SUFFIX,pinduoduo.com,DIRECT
+DOMAIN-SUFFIX,qcc.com,DIRECT
+DOMAIN-SUFFIX,qidian.com,DIRECT
+DOMAIN-SUFFIX,qimao.com,DIRECT
+DOMAIN-SUFFIX,qpic.cn,DIRECT
+DOMAIN-SUFFIX,qq.com,DIRECT
+DOMAIN-SUFFIX,qunar.com,DIRECT
+DOMAIN-SUFFIX,sanguosha.cn,DIRECT
+DOMAIN-SUFFIX,sohu.com,DIRECT
+DOMAIN-SUFFIX,soulapp.cn,DIRECT
+DOMAIN-SUFFIX,taobao.com,DIRECT
+DOMAIN-SUFFIX,tianyancha.com,DIRECT
+DOMAIN-SUFFIX,tencent.com,DIRECT
+DOMAIN-SUFFIX,tudou.com,DIRECT
+DOMAIN-SUFFIX,wandoujia.com,DIRECT
+DOMAIN-SUFFIX,wechat.com,DIRECT
+DOMAIN-SUFFIX,weibo.com,DIRECT
+DOMAIN-SUFFIX,wps.cn,DIRECT
+DOMAIN-SUFFIX,wtzw.com,DIRECT
+DOMAIN-SUFFIX,xiaohongshu.com,DIRECT
+DOMAIN-SUFFIX,xxsy.net,DIRECT
+DOMAIN-SUFFIX,youdao.com,DIRECT
+DOMAIN-SUFFIX,youku.com,DIRECT
+DOMAIN-SUFFIX,zhengqi100.com,DIRECT
+DOMAIN-SUFFIX,zhihu.com,DIRECT
+DOMAIN-SUFFIX,zhipin.com,DIRECT
+DOMAIN-SUFFIX,zijieapi.com,DIRECT
+DOMAIN-SUFFIX,zongheng.com,DIRECT
+DOMAIN-SUFFIX,zybang.com,DIRECT
+IP-CIDR,36.150.161.60/31,DIRECT,no-resolve
+IP-CIDR,36.150.161.97/32,DIRECT,no-resolve
+IP-CIDR,36.150.161.159/31,DIRECT,no-resolve
+IP-CIDR,36.155.184.206/32,DIRECT,no-resolve
+IP-CIDR,39.175.108.186/32,DIRECT,no-resolve
+IP-CIDR,47.110.187.252/32,DIRECT,no-resolve
+IP-CIDR,59.82.120.162/32,DIRECT,no-resolve
+IP-CIDR,101.32.104.4/32,DIRECT,no-resolve
+IP-CIDR,101.91.33.63/32,DIRECT,no-resolve
+IP-CIDR,101.91.33.83/32,DIRECT,no-resolve
+IP-CIDR,101.91.33.120/32,DIRECT,no-resolve
+IP-CIDR,112.45.37.74/32,DIRECT,no-resolve
+IP-CIDR,112.45.37.78/32,DIRECT,no-resolve
+IP-CIDR,124.222.57.60/32,DIRECT,no-resolve
+IP-CIDR,221.178.18.111/32,DIRECT,no-resolve
+--------------------------------------------------
 
 [URL Rewrite]
 ^https?://(www.)?g.cn https://www.google.com 302
 ^https?://(www.)?google.cn https://www.google.com 302
-
-// 穿山甲广告链接 - 源于【 开发文档 】
-^https?:\/\/api-access.pangolin-sdk-toutiao.com\/api\/ad\/union\/sdk\/get_ads\/ _ REJECT
-^https?:\/\/api-access.pangolin-sdk-toutiao-b.com\/api\/ad\/union\/sdk\/get_ads\/ _ REJECT
-
-// 爱奇艺广告链接 - 源于【 抓包工具 】
-^http:\/\/pic3.iqiyipic.com\/image\/20230526\/92\/a4\/pv_10025527357_em_601.jpg _ REJECT
-
-// 穿山甲广告链接 - 源于【 抓包工具 】
-^https?:\/\/ether-pack.pangolin-sdk-toutiao.com\/union\/endcard\/ _ REJECT
-
-// 腾讯广告链接 - 源于【 抓包工具 】
-^https?:\/\/kg.qq.com\/gtimg\/music\/common\/upload\/image\/I8JFTP3I15AJWG4KLMOUHY.jpg _ REJECT
-
-// 网易广告链接 - 源于【 抓包工具 】
-^https?:\/\/pg-ad-b1.ws.126.net\/yixiao\/32453\/*.jpg _ REJECT
-
-[MITM]
-ca-passphrase = Shadowrocket
-hostname = pangolin-sdk-toutiao.com,pangolin-sdk-toutiao-b.com,kg.qq.com,126.net
-enable = true
-ca-p12 = 
-
-
-
-// 广告链接存放区 - 暂未进行设限
