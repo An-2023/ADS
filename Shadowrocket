@@ -21,17 +21,6 @@ DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
 --------------------------------------------------
 
 --------------------------------------------------
-# Accelerate the blocked sites
-
-DOMAIN-SUFFIX,githubusercontent.com,PROXY
-DOMAIN-SUFFIX,huggingface.co,PROXY
---------------------------------------------------
-
---------------------------------------------------
-# Sites that are not blocked by the Great Firewall
-
-
---------------------------------------------------
 #                                           Google
 --------------------------------------------------
 # Google
@@ -55,7 +44,8 @@ IP-CIDR,2001:B28:F23F:://48,PROXY,no-resolve
 --------------------------------------------------
 #                                                X
 --------------------------------------------------
-# X
+# Other
+DOMAIN-SUFFIX,githubusercontent.com,PROXY
 DOMAIN-SUFFIX,t.co,PROXY
 DOMAIN-SUFFIX,twimg.com,PROXY
 DOMAIN-SUFFIX,twitter.com,PROXY
