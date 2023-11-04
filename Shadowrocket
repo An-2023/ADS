@@ -65,14 +65,12 @@ DOMAIN-SUFFIX,mihoyo.com,DIRECT
 DOMAIN-SUFFIX,moji.com,DIRECT
 DOMAIN-SUFFIX,pinduoduo.com,DIRECT
 DOMAIN-SUFFIX,qcc.com,DIRECT
-DOMAIN-SUFFIX,qidian.com,DIRECT
 DOMAIN-SUFFIX,qimao.com,DIRECT
 DOMAIN-SUFFIX,qunar.com,DIRECT
 DOMAIN-SUFFIX,sanguosha.cn,DIRECT
 DOMAIN-SUFFIX,sohu.com,DIRECT
 DOMAIN-SUFFIX,soulapp.cn,DIRECT
 DOMAIN-SUFFIX,tianyancha.com,DIRECT
-DOMAIN-SUFFIX,tencent.com,DIRECT
 DOMAIN-SUFFIX,wandoujia.com,DIRECT
 DOMAIN-SUFFIX,weibo.com,DIRECT
 DOMAIN-SUFFIX,wps.cn,DIRECT
@@ -149,6 +147,10 @@ DOMAIN-SUFFIX,wechat.com,DIRECT
 DOMAIN-SUFFIX,wechatpay.cn,DIRECT
 IP-CIDR,119.167.144.13/32,DIRECT,no-resolve
 IP-CIDR,119.167.144.44/32,DIRECT,no-resolve
+
+# Other
+DOMAIN-SUFFIX,qidian.com,DIRECT
+DOMAIN-SUFFIX,tencent.com,DIRECT
 
 --------------------------------------------------
 #                                          Alibaba
