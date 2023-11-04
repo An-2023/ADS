@@ -116,7 +116,7 @@ IP-CIDR,221.178.18.111/32,DIRECT,no-resolve
 
 
 --------------------------------------------------
-#                     Google
+#                                           Google
 --------------------------------------------------
 # Google
 DOMAIN-SUFFIX,google.com,PROXY
@@ -124,7 +124,7 @@ DOMAIN-SUFFIX,googleapis.com,PROXY
 DOMAIN-SUFFIX,googlevideo.com,PROXY
 
 --------------------------------------------------
-#                    Telegram
+#                                         Telegram
 --------------------------------------------------
 # Telegram
 DOMAIN-SUFFIX,t.me,PROXY
@@ -137,7 +137,7 @@ IP-CIDR,2001:B28:F23D:://48,PROXY,no-resolve
 IP-CIDR,2001:B28:F23F:://48,PROXY,no-resolve
 
 --------------------------------------------------
-#                       X
+#                                                X
 --------------------------------------------------
 # X
 DOMAIN-SUFFIX,t.co,PROXY
@@ -145,7 +145,7 @@ DOMAIN-SUFFIX,twimg.com,PROXY
 DOMAIN-SUFFIX,twitter.com,PROXY
 
 --------------------------------------------------
-#                    Tencent
+#                                          Tencent
 --------------------------------------------------
 # WeChat
 DOMAIN-SUFFIX,qpic.cn,DIRECT
@@ -156,7 +156,7 @@ IP-CIDR,119.167.144.13/32,DIRECT,no-resolve
 IP-CIDR,119.167.144.44/32,DIRECT,no-resolve
 
 --------------------------------------------------
-#                    Alibaba
+#                                          Alibaba
 --------------------------------------------------
 # Alipay
 DOMAIN-SUFFIX,alipay.com,DIRECT
@@ -165,7 +165,7 @@ DOMAIN-SUFFIX,alipay.com,DIRECT
 DOMAIN-SUFFIX,taobao.com,DIRECT
 
 --------------------------------------------------
-#                   ByteDance
+#                                        ByteDance
 --------------------------------------------------
 # Douyin
 DOMAIN-SUFFIX,amemv.com,DIRECT
@@ -181,13 +181,17 @@ IP-CIDR,157.122.99.166/30,DIRECT,no-resolve
 IP-CIDR,157.122.99.168/32,DIRECT,no-resolve
 
 --------------------------------------------------
-#                     Baidu
+#                                            Baidu
 --------------------------------------------------
 # Baidu
 DOMAIN-SUFFIX,baidu.com,DIRECT
 
 # iQiYi
 DOMAIN-SUFFIX,iqiyi.com,DIRECT
+
+--------------------------------------------------
+#                                            Other
+--------------------------------------------------
 
 [URL Rewrite]
 ^https?://(www.)?g.cn https://www.google.com 302
