@@ -39,7 +39,6 @@ DOMAIN-SUFFIX,163.com,DIRECT
 DOMAIN-SUFFIX,58.com,DIRECT
 DOMAIN-SUFFIX,aligames.com,DIRECT
 DOMAIN-SUFFIX,amap.com,DIRECT
-DOMAIN-SUFFIX,amemv.com,DIRECT
 DOMAIN-SUFFIX,bilibili.com,DIRECT
 DOMAIN-SUFFIX,bilivideo.com,DIRECT
 DOMAIN-SUFFIX,chacuo.net,DIRECT
@@ -168,6 +167,7 @@ DOMAIN-SUFFIX,taobao.com,DIRECT
 #                   ByteDance
 --------------------------------------------------
 # Douyin
+DOMAIN-SUFFIX,amemv.com,DIRECT
 DOMAIN-SUFFIX,douyin.com,DIRECT
 DOMAIN-SUFFIX,douyincdn.com,DIRECT
 IP-CIDR,36.250.224.91/32,DIRECT,no-resolve
