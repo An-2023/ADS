@@ -64,6 +64,7 @@ IP-CIDR,119.167.144.44/32,DIRECT,no-resolve
 # Other
 DOMAIN-SUFFIX,qidian.com,DIRECT
 DOMAIN-SUFFIX,tencent.com,DIRECT
+IP-CIDR,124.222.57.60/32,DIRECT,no-resolve
 
 --------------------------------------------------
 #                                          Alibaba
