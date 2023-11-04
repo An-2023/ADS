@@ -53,7 +53,7 @@ DOMAIN-SUFFIX,twitter.com,PROXY
 --------------------------------------------------
 #                                          Tencent
 --------------------------------------------------
-# WeChat
+# WeChat / 小程序
 DOMAIN-SUFFIX,qpic.cn,DIRECT
 DOMAIN-SUFFIX,qq.com,DIRECT
 DOMAIN-SUFFIX,wechat.com,DIRECT
@@ -68,7 +68,7 @@ DOMAIN-SUFFIX,tencent.com,DIRECT
 --------------------------------------------------
 #                                          Alibaba
 --------------------------------------------------
-# Taobao
+# Alipay / Taobao
 DOMAIN-SUFFIX,taobao.com,DIRECT
 
 # Other
@@ -108,10 +108,12 @@ DOMAIN-SUFFIX,baidu.com,DIRECT
 # iQiYi
 DOMAIN-SUFFIX,iqiyi.com,DIRECT
 
+# Other
+
 --------------------------------------------------
 #                                            Other
 --------------------------------------------------
-# Safari
+# App / Safari
 DOMAIN-SUFFIX,sojson.com,DIRECT
 DOMAIN-SUFFIX,usetoolbar.com,DIRECT
 
