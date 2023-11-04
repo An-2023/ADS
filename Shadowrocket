@@ -60,6 +60,9 @@ DOMAIN-SUFFIX,qq.com,DIRECT
 DOMAIN-SUFFIX,qq.com.cn,DIRECT
 DOMAIN-SUFFIX,wechat.com,DIRECT
 DOMAIN-SUFFIX,wechatpay.cn,DIRECT
+IP-CIDR,101.32.104.4/32,DIRECT,no-resolve
+IP-CIDR,119.167.131.167/32,DIRECT,no-resolve
+IP-CIDR,119.167.131.168/32,DIRECT,no-resolve
 IP-CIDR,119.167.131.174/32,DIRECT,no-resolve
 IP-CIDR,119.167.131.176/32,DIRECT,no-resolve
 IP-CIDR,119.167.131.246/32,DIRECT,no-resolve
@@ -128,9 +131,11 @@ DOMAIN-SUFFIX,iqiyi.com,DIRECT
 #                                            Other
 --------------------------------------------------
 # App / Safari
+DOMAIN-SUFFIX,bing.com,DIRECT
 DOMAIN-SUFFIX,github.com,DIRECT
 DOMAIN-SUFFIX,icloud.com,DIRECT
 DOMAIN-SUFFIX,sojson.com,DIRECT
+DOMAIN-SUFFIX,tool.lu,DIRECT
 DOMAIN-SUFFIX,usetoolbar.com,DIRECT
 
 [URL Rewrite]
