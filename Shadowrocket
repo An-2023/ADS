@@ -70,6 +70,8 @@ IP-CIDR,119.167.131.234/31,DIRECT,no-resolve
 IP-CIDR,119.167.131.246/32,DIRECT,no-resolve
 IP-CIDR,119.167.144.13/32,DIRECT,no-resolve
 IP-CIDR,119.167.144.44/32,DIRECT,no-resolve
+IP-CIDR,123.129.201.219/32,DIRECT,no-resolve
+IP-CIDR,123.129.201.220/32,DIRECT,no-resolve
 IP-CIDR,202.97.231.232/31,DIRECT,no-resolve
 
 # 王者荣耀
@@ -97,6 +99,7 @@ DOMAIN-SUFFIX,amap.com,DIRECT
 DOMAIN-SUFFIX,dingtalk.com,DIRECT
 DOMAIN-SUFFIX,tudou.com,DIRECT
 DOMAIN-SUFFIX,youku.com,DIRECT
+IP-CIDR,47.102.253.50/32,DIRECT,no-resolve
 
 --------------------------------------------------
 #                                        ByteDance
