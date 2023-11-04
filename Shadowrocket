@@ -71,7 +71,6 @@ DOMAIN-SUFFIX,pinduoduo.com,DIRECT
 DOMAIN-SUFFIX,qcc.com,DIRECT
 DOMAIN-SUFFIX,qidian.com,DIRECT
 DOMAIN-SUFFIX,qimao.com,DIRECT
-DOMAIN-SUFFIX,qpic.cn,DIRECT
 DOMAIN-SUFFIX,qunar.com,DIRECT
 DOMAIN-SUFFIX,sanguosha.cn,DIRECT
 DOMAIN-SUFFIX,sohu.com,DIRECT
@@ -150,6 +149,7 @@ DOMAIN-SUFFIX,twitter.com,PROXY
 #                    Tencent
 --------------------------------------------------
 # WeChat
+DOMAIN-SUFFIX,qpic.cn,DIRECT
 DOMAIN-SUFFIX,qq.com,DIRECT
 DOMAIN-SUFFIX,wechat.com,DIRECT
 IP-CIDR,119.167.144.13/32,DIRECT,no-resolve
